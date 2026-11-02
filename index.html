@@ -31,7 +31,8 @@ footer{background:#080809;color:#bcb8ae;padding:22px 0;font-size:13px}.foot{disp
 <header><div class="wrap nav">
 <a class="brand" href="#home"><div class="mark"><span>⌂</span></div><div>YAHAVI<small>BUILDERS & DEVELOPERS</small></div></a>
 <button class="menu" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">Menu ☰</button>
-<nav><a href="#home">Home</a><a href="#about">About Us</a><a href="#packages">Packages</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+<nav><a href="#home">Home</a><a href="#about">About Us</a><a href="#packages">Packages</a><a href="#projects">Projects</a>
+<a href="#services">Services</a><a href="#contact">Contact</a></nav>
 </div></header>
 <main>
 <section class="hero" id="home"><div class="wrap"><div class="hero-content">
@@ -63,6 +64,31 @@ footer{background:#080809;color:#bcb8ae;padding:22px 0;font-size:13px}.foot{disp
 </div></div></section>
 <section class="contact" id="contact"><div class="wrap contact-grid"><div><div class="eyebrow">Let's Build Together</div><h2>Have a project in mind?</h2><p>Contact Yahavi Builders and Developers to discuss your construction requirements and request a project-specific estimate.</p><div class="contact-list"><div class="contact-item"><strong>Call us</strong><a href="tel:+919342076959">+91 93420 76959</a></div><div class="contact-item"><strong>Location</strong>Hosur, Tamil Nadu</div><div class="contact-item"><strong>Project locations</strong>Hosur · Denkanikottai · Thally · Jigani · Kelamangalam</div></div></div>
 <form onsubmit="sendWhatsApp(event)"><h3>Request a callback</h3><div class="field"><label for="name">Your name</label><input id="name" required placeholder="Enter your name"></div><div class="field"><label for="phone">Phone number</label><input id="phone" required inputmode="tel" placeholder="Enter your phone number"></div><div class="field"><label for="area">Approximate built-up area</label><input id="area" placeholder="Example: 1,200 sq. ft."></div><div class="field"><label for="package">Preferred package</label><select id="package"><option>Not sure yet</option><option>₹1,800 / sq. ft. — Standard</option><option>₹2,000 / sq. ft. — Premium</option><option>₹2,200 / sq. ft. — Luxury</option></select></div><div class="field"><label for="message">Project details</label><textarea id="message" placeholder="Tell us briefly about your project"></textarea></div><button class="btn gold" type="submit">Send enquiry on WhatsApp</button><p class="form-note">This opens WhatsApp with your enquiry prepared. You can review it before sending.</p></form></div></section>
+
+<section class="section" id="projects">
+  <div class="wrap">
+    <p class="eyebrow">OUR WORK</p>
+    <h2>Our Completed Projects</h2>
+    <p>Explore a selection of residential construction and interior finishing work by Yahavi Builders and Developers.</p>
+    <div class="project-gallery">
+<figure><img src="images/project-1.jpg" alt="Yahavi Builders completed project 1" loading="lazy"><figcaption>Completed Project 1</figcaption></figure>
+<figure><img src="images/project-2.jpg" alt="Yahavi Builders completed project 2" loading="lazy"><figcaption>Completed Project 2</figcaption></figure>
+<figure><img src="images/project-3.jpg" alt="Yahavi Builders completed project 3" loading="lazy"><figcaption>Completed Project 3</figcaption></figure>
+<figure><img src="images/project-4.jpg" alt="Yahavi Builders completed project 4" loading="lazy"><figcaption>Completed Project 4</figcaption></figure>
+<figure><img src="images/project-5.jpg" alt="Yahavi Builders completed project 5" loading="lazy"><figcaption>Completed Project 5</figcaption></figure>
+<figure><img src="images/project-6.jpg" alt="Yahavi Builders completed project 6" loading="lazy"><figcaption>Completed Project 6</figcaption></figure>
+<figure><img src="images/project-7.jpg" alt="Yahavi Builders completed project 7" loading="lazy"><figcaption>Completed Project 7</figcaption></figure>
+<figure><img src="images/project-8.jpg" alt="Yahavi Builders completed project 8" loading="lazy"><figcaption>Completed Project 8</figcaption></figure>
+    </div>
+  </div>
+</section>
+<style>
+.project-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin:28px 0}
+.project-gallery figure{margin:0;background:#f7f5f0;border-radius:10px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,.10)}
+.project-gallery img{width:100%;height:245px;object-fit:cover;display:block}
+.project-gallery figcaption{padding:11px 14px;font-weight:700;color:#24211b}
+</style>
+
 </main>
 <footer><div class="wrap foot"><span>© <span id="year"></span> Yahavi Builders and Developers. All rights reserved.</span><span class="goldtext">Build Today... Live Better Tomorrow...</span></div></footer>
 <script>
